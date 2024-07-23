@@ -1,0 +1,24 @@
+# Ignore compiled CSS files
+assets/css/main.css
+assets/css/noscript.css
+
+# Ignore node_modules if you're using npm
+node_modules/
+
+# Ignore any log files
+*.log
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore any backup files
+*~
+*.bak
+
+# Ignore any IDE or editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
