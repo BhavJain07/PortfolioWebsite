@@ -188,3 +188,15 @@
 			});
 
 })(jQuery);
+
+// Add this at the end of the file
+document.addEventListener('DOMContentLoaded', (event) => {
+    const resumeButton = document.getElementById('resume-button');
+    if (resumeButton) {
+        resumeButton.addEventListener('click', function(e) {
+            console.log('Resume button clicked');
+            window.open(this.href, '_blank');
+            e.preventDefault(); // Prevent default only after we've opened the link
+        });
+    }
+});

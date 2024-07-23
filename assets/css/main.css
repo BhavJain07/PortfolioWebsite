@@ -4028,3 +4028,60 @@ input, select, textarea {
   #sidebar nav ul li a:hover::after {
 	transform: translateX(0);
   }
+  .project-container {
+    position: relative;
+}
+
+.project-item {
+    position: relative;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+.project-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background-color: #9bf0fd;
+    box-shadow: 
+        0 0 2px #9bf0fd,
+        0 0 5px #9bf0fd,
+        0 0 10px #9bf0fd,
+        0 0 20px #9bf0fd;
+}
+#resume-button-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 17.5em; /* Match sidebar width */
+    padding: 20px 0;
+    z-index: 10001;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 7, 0.95); /* Match sidebar background */
+}
+
+#resume-button {
+    padding: 0px 20px;
+    background-color: transparent;
+    color: #00FFFF;
+    border: 2px solid #00FFFF;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#resume-button:hover, #resume-button:focus {
+    background-color: #00FFFF;
+    color: #000033;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.6);
+}
