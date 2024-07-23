@@ -1,7 +1,3 @@
-# Ignore compiled CSS files
-assets/css/main.css
-assets/css/noscript.css
-
 # Ignore node_modules if you're using npm
 node_modules/
 
